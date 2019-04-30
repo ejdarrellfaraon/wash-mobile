@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Wash To Go </title>
+
+  <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../Assets/css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../Assets/css/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+</head>
+
+<body class="mainbody">
+    <div class="container">
+        <img src="../Assets/img/finallogo1.png" class="logoindex">
+                <div class="inputlogin">
+                    <!-- Username input -->
+                    <div class="md-form" id="username">
+                        <i class="fas fa-user prefix"></i>
+                        <input type="text" id="username_login" class="form-control" name="uname">
+                        <label for="username">E-mail address</label>
+                    </div>
+                </div>
+                <div class="inputlogin">
+                    <!-- Password input -->
+                    <div class="md-form" id="password">
+                        <i class="fas fa-shield-alt prefix"></i>
+                        <input type="password" id="password_login" class="form-control validate" name="password">
+                        <label for="password" data-error="wrong" data-success="right">Type your password</label>
+                    </div>
+                </div>
+                    <!--Buttons Login-->
+                        <center>
+                            <button name="btn-login" id="btn-login" class="btn" style="background-color:#304352" onclick="login()">Log In</button>
+                            <p>No Account?</p>
+                    <!-- Split button -->
+                            <div class="btn-group">
+                                    <button type="button" class="btn"style="background-color:#304352">Register As</button>
+                                    <button type="button" class="btn dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" style="background-color:#304352">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="register.html">User</a>
+                                    <a class="dropdown-item" href="ownerregister.html">Car Wash Owner</a>
+                                    </div>
+                                </div>    
+                        </center>
+                 <br>
+    </div>
+
+<script type="text/javascript">
+    function log(){
+        var uname = document.getElementById("username").value;
+        var pword = document.getElementById("password").value;
+
+        console.log(uname + pword)
+        login(uname, pword);
+        }
+</script>
+<script type="text/javascript" src="../Assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../Assets/js/popper.min.js"></script>
+<script type="text/javascript" src="../Assets/js/mdb.min.js"></script>
+<script type="text/javascript" src="../Assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../Assets/js/main.js"></script>
+
+</body>
+</html>
